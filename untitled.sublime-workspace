@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"invalid",
+				"invalid_address"
+			],
+			[
 				"up",
 				"update"
 			],
@@ -116,10 +120,70 @@
 	"buffers":
 	[
 		{
+			"file": "spec/models/user_spec.rb",
+			"settings":
+			{
+				"buffer_size": 3149,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 578,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 37,
+				"line_ending": "Unix",
+				"name": "<%= @user.name %>, <%= @user.email %>"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 1176,
+				"buffer_size": 635,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nFactoryGirl\n    \nend",
+			"file": "spec/factories.rb",
+			"file_size": 0,
+			"file_write_time": 1391865080000000,
+			"settings":
+			{
+				"buffer_size": 21,
 				"line_ending": "Unix"
 			}
 		}
@@ -204,6 +268,36 @@
 	},
 	"file_history":
 	[
+		"/home/walter/ruby/rails_projects/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/layouts/application.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/config/application.rb",
+		"/home/walter/ruby/rails_projects/sample_app/Gemfile",
+		"/home/walter/ruby/rails_projects/sample_app/spec/models/user_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/models/user.rb",
+		"/home/walter/ruby/rails_projects/sample_app/db/migrate/20140208112429_add_index_to_users_email.rb",
+		"/home/walter/ruby/rails_projects/sample_app/.gitignore",
+		"/home/walter/ruby/rails_projects/sample_app/spec/helpers/application_helper_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/support/utillities.rb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/views/users/new.html.erb_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/helpers/users_helper_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/static_pages/contact.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/layouts/_footer.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/config/routes.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/layouts/_header.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/users/new.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/static_pages/home.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/requests/user_pages_spec.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/helpers/application_helper.rb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/layouts/_shim.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/app/models/pg_test.rb",
+		"/home/walter/ruby/rails_projects/sample_app/config/database.yml",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/static_pages/help.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/app/views/static_pages/about.html.erb",
+		"/home/walter/ruby/rails_projects/sample_app/spec/spec_helper.rb",
+		"/home/walter/ruby/rails_projects/sample_app/README.rdoc",
+		"/home/walter/ruby/rails_projects/sample_app/config/initializers/secret_token.rb",
 		"/home/walter/ruby/rails_projects/demo_app/app/models/user.rb",
 		"/home/walter/ruby/rails_projects/demo_app/app/models/mircropost.rb",
 		"/home/walter/.gemrc",
@@ -301,11 +395,7 @@
 		"/home/walter/clojure/myapp/resources/public/js/bootstrap.min.js",
 		"/home/walter/clojure/myapp/src/myapp/views/templates/about.html",
 		"/home/walter/clojure/video-app/src/video_app/x.as",
-		"/home/walter/clojure/video-app/resources/public/script/script.js",
-		"/home/walter/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-		"/ script.js",
-		"/home/walter/clojure/video-app/resources/public/test.js",
-		"/home/walter/clojure/video-app/resources/public/jquery-1.10.2.js"
+		"/home/walter/clojure/video-app/resources/public/script/script.js"
 	],
 	"find":
 	{
@@ -362,23 +452,212 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "spec/models/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1176,
+						"buffer_size": 3149,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								923,
+								923
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 335.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/user.rb",
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 71.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/users/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 37,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<%= @user.name %>, <%= @user.email %>",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/factories.rb",
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
 							]
 						],
 						"settings":
@@ -462,6 +741,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 160.0,
+	"side_bar_width": 256.0,
 	"status_bar_visible": true
 }
