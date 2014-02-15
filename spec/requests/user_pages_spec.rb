@@ -60,11 +60,17 @@ describe "User pages" do
 
         it { should have_content(user.name) }
         it { should have_title(user.name) }
+        it { should have_link("RSS Feed", user_path(user, :rss)) }
 
         describe "microposts" do
             it { should have_content(m1.content) }
             it { should have_content(m2.content) }
             it { should have_content(user.microposts.count) } #####
+        end
+
+        describe "rss feed" do
+            before { click_link "RSS Feed" }
+            it { should have_content(m1.content) } 
         end
 
         describe "follow/unfollow button" do
