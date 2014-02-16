@@ -254,4 +254,37 @@ describe "User pages" do
             it { should have_link(user.name, href: user_path(user)) }
         end
     end
+
+    describe "Messages" do
+        
+        let(:user) { FactoryGirl.create :user }
+        let(:other_user) { FactoryGirl.create :user }
+
+        before do
+            @message = user.outgoing_messages.build content: "Lore Ipsum", to: other_user
+            @message.save
+        end
+
+        describe "messages of user" do
+            before do
+                sign_in user
+                visit user_messages_path(user)
+            end
+
+            it { should have_title(full_title('Messages')) }
+            it { should have_selector('h3', text: 'Messages') }
+            it { should have_content(@message.content) }
+        end
+
+        describe "messages of other user" do
+            before do
+                sign_in other_user
+                visit user_messages_path(other_user)
+            end
+
+            it { should have_title(full_title('Messages')) }
+            it { should have_selector('h3', text: 'Messages') }
+            it { should have_content(@message.content) }
+        end
+    end
 end

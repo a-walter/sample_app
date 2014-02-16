@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140212184547) do
+ActiveRecord::Schema.define(version: 20140216102432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: true do |t|
+    t.text     "content"
+    t.integer  "from_id"
+    t.integer  "to_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["from_id", "to_id"], name: "index_messages_on_from_id_and_to_id", using: :btree
 
   create_table "microposts", force: true do |t|
     t.string   "content"

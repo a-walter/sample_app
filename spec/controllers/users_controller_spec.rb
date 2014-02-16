@@ -18,4 +18,15 @@ describe UsersController do
             expect { delete :destroy, id: admin.id }.not_to change(User, :count)
         end
     end
+
+
+    describe "messages" do
+
+      let(:user1) { FactoryGirl.create(:user) }
+      let(:user2) { FactoryGirl.create(:user) }
+
+      let(:message) { user1.outgoing_messages.create(content: "Some Content", to: user2) }
+
+      it { expect (message).to be_valid }
+    end
 end

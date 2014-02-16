@@ -1,0 +1,13 @@
+<li>
+    <%= gravatar_for message.from size:52 %>
+    <%= link_to message.from.name, message.from %>
+    <span class="content"><%= message.content %></span>
+    <span class="timestamp">
+        Posted <%= time_ago_in_words(message.created_at) %> ago.
+    </span>
+    <% if current_user?(message.from) %>
+        <%= link_to "delete", user_message_path(@user, message), method: :delete,
+            data: { confirm: "Are you sure?" },
+            title: message.content %>
+    <% end %>
+</li>

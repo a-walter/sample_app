@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
         class_name: "Relationship",
         dependent: :destroy
     has_many :followers, through: :reverse_relationships, source: :follower
+    has_many :outgoing_messages, class_name: "Message", foreign_key: "from_id"
+    has_many :incoming_messages, class_name: "Message", foreign_key: "to_id"
 
     before_save { email.downcase! }
     before_create :create_remember_token
@@ -44,6 +46,10 @@ class User < ActiveRecord::Base
 
     def unfollow!(other_user)
         relationships.find_by(followed_id: other_user.id).destroy
+    end
+
+    def all_messages 
+        Message.where("from_id = :user_id OR to_id = :user_id", user_id: self).order('created_at DESC') 
     end
 
 private

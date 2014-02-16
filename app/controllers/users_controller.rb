@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
     before_action :signed_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
     before_action :signed_in_user_redir, only: [:new, :create]
-    before_action :correct_user, only: [:edit, :update]
+    before_action :correct_user, only: [:edit, :update, :messages]
     before_action :admin_user, only: :destroy
   
     
